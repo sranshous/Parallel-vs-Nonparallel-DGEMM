@@ -1,7 +1,8 @@
 function compareResults( csv_file_parallel, csv_file_nonparallel )
-%PLOTRESULTS Plot the rows vs cols vs time matrix from the scripts
-%   Input is the path to the CSV file that was generated from the run.sh
-%   script. This will plot it in 3 dimensions for your viewing pleasure.
+%COMPARERESULTS Plot the parallel output against the nonparallel output
+%   Input is the path to the parallel output file and the path to the
+%   nonparallel output file. It will turn the CSV files into pretty surfaces
+%   using the fit function from curve fitting toolbox and then plot them.
 
 results_p = csvread(csv_file_parallel);
 results_np = csvread(csv_file_nonparallel);
