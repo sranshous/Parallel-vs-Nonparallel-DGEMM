@@ -12,7 +12,9 @@ make
 ./matrix_multiply
 ```
 Since we are randomly generating the matricies to multiply according to
-    C = A * B
+```
+C = A * B
+```
 we must give them heights. The program requires an input for the height and
 widths of the matricies. The print statements in the program were taken out so
 I could generate the CSV files correctly, but it works as follows. You put in
