@@ -1,4 +1,7 @@
 %
+% I did not write this file. I found it at:
+%    http://www.mathworks.com/matlabcentral/fileexchange/14677
+%
 % Draw a color-coded line by using the edge of a patch with no facecolor
 %
 % SYNTAX
