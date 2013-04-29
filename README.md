@@ -6,9 +6,11 @@ Nothing fancy, just the very basics of Open MP.
 ####Manually####
 There are two ways to run it. You can go into either the parallel or
 nonparallel folder and make and run it. For example in the nonparallel folder.
+```
     make clean
     make
     ./matrix_multiply
+```
 Since we are randomly generating the matricies to multiply according to
     C = A * B
 we must give them heights. The program requires an input for the height and
