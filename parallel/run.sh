@@ -3,16 +3,20 @@
 # Remove the old output file and create the new one
 if [ -e output ]
 then
-    rm outout
+    rm output
     touch output
 fi
 
+echo "Clean and make"
+make clean
+make
+
 # Run it for a bunch of test cases
-for i in seq `500 500 10000`
+for i in {500..1000..10}
 do
-    for j in seq `500 500 10000`
+    for j in {500..1000..10}
     do
-        echo "$i,$j"
-        echo "$i $j" | ./matrix_multiply_parallel >> output
+        echo "$i rows $j cols"
+        echo "$i,$j,`echo "$i $j" | ./matrix_multiply_parallel`" >> output
     done
 done

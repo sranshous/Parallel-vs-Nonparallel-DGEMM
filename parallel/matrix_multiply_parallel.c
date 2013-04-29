@@ -37,7 +37,7 @@ int main(int argc, char** argv)
     int m = -1;
     int n = -1;
 
-    printf("Enter the sizes for M and N: ");
+    //printf("Enter the sizes for M and N: ");
     scanf("%d%d", &m, &n);
 
     if (verbose)
@@ -177,5 +177,6 @@ void mult2DArray(double** a, double** b, double** c, int m, int n)
     gettimeofday(&end, NULL);
     double microS = (double) (end.tv_usec - start.tv_usec) / 1000000;
     double numS = (double) (end.tv_sec - start.tv_sec);
-    printf("The multiplication took %lfs\n", numS + microS);
+    //printf("The multiplication took %lfs\n", numS + microS);
+    printf("%lf", numS + microS);
 }
