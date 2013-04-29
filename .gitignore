@@ -1,0 +1,3 @@
+*.o
+nonparallel/matrix_multiply
+parallel/matrix_multiply_parallel
