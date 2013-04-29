@@ -16,7 +16,8 @@ cline(results(:,1), results(:,2), results(:,3));
 view(3);
 xlabel('Number of rows');
 ylabel('Number of columns');
-zlabel('Time for multiplication (minutes)');
+zlabel('Time for multiplication (seconds)');
 colorbar;
+grid on;
 
 end
